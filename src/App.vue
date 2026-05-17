@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useTodos } from './composables/useTodos'
+import TodoList from './components/TodoList.vue'
 
 const newTodoTitle = ref('')
-const { filteredTodos, addTodo } = useTodos()
+const { filteredTodos, addTodo, deleteTodo, toggleTodo } = useTodos()
 
 function handleAddTodo() {
   const wasAdded = addTodo(newTodoTitle.value)
@@ -36,15 +37,11 @@ function handleAddTodo() {
         </div>
       </form>
 
-      <p v-if="filteredTodos.length === 0" class="empty-state">
-        No todos yet.
-      </p>
-
-      <ul v-else class="todo-list" aria-label="Todo list">
-        <li v-for="todo in filteredTodos" :key="todo.id" class="todo-row">
-          {{ todo.title }}
-        </li>
-      </ul>
+      <TodoList
+        :todos="filteredTodos"
+        @toggle="toggleTodo"
+        @remove="deleteTodo"
+      />
     </section>
   </main>
 </template>

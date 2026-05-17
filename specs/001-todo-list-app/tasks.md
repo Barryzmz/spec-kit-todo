@@ -48,8 +48,8 @@ description: "Task list for Simple Todo List App implementation"
 - [x] T012 Implement `filteredTodos`, `completedCount`, and `activeCount` computed values in `src/composables/useTodos.ts`
 - [x] T013 Implement Todo ID creation using `crypto.randomUUID()` with `Date.now().toString()` fallback in `src/composables/useTodos.ts`
 - [x] T014 Implement `addTodo(title: string)` with trim, blank rejection, `completed: false`, `createdAt`, and persistence in `src/composables/useTodos.ts`
-- [ ] T015 Implement `deleteTodo(id: string)` in `src/composables/useTodos.ts`
-- [ ] T016 Implement `toggleTodo(id: string)` for complete and incomplete transitions in `src/composables/useTodos.ts`
+- [x] T015 Implement `deleteTodo(id: string)` in `src/composables/useTodos.ts`
+- [x] T016 Implement `toggleTodo(id: string)` for complete and incomplete transitions in `src/composables/useTodos.ts`
 - [ ] T017 Implement `editTodo(id: string, title: string)` with trim, blank rejection, original-title preservation, and persistence in `src/composables/useTodos.ts`
 - [ ] T018 Implement `clearCompleted()` in `src/composables/useTodos.ts`
 - [ ] T019 Implement `setFilter(filter: TodoFilter)` without localStorage persistence in `src/composables/useTodos.ts`
@@ -74,9 +74,9 @@ description: "Task list for Simple Todo List App implementation"
 
 - [ ] T024 [US1] Create `TodoInput.vue` component shell with `<script setup lang="ts">` in `src/components/TodoInput.vue`
 - [ ] T025 [US1] Implement local input state, Enter submit, Add button submit, trim, blank rejection, and successful clear behavior in `src/components/TodoInput.vue`
-- [ ] T026 [US1] Create `TodoList.vue` component shell with typed `todos: Todo[]` prop in `src/components/TodoList.vue`
-- [ ] T027 [US1] Implement list rendering and empty-state text in `src/components/TodoList.vue`
-- [ ] T028 [US1] Update `App.vue` to call `useTodos()` and render `TodoInput.vue` and `TodoList.vue` in `src/App.vue`
+- [x] T026 [US1] Create `TodoList.vue` component shell with typed `todos: Todo[]` prop in `src/components/TodoList.vue`
+- [x] T027 [US1] Implement list rendering and empty-state text in `src/components/TodoList.vue`
+- [x] T028 [US1] Update `App.vue` to call `useTodos()` and render `TodoInput.vue` and `TodoList.vue` in `src/App.vue`
 - [ ] T029 [US1] Wire `TodoInput` add event to `addTodo` and pass `filteredTodos` to `TodoList` in `src/App.vue`
 
 ### User Story 2 - Manage Todo State and Text (Priority: P1)
@@ -85,9 +85,9 @@ description: "Task list for Simple Todo List App implementation"
 
 **Independent Test**: Create one Todo, toggle it complete and incomplete, edit it with valid text, reject blank edited text, and delete it.
 
-- [ ] T030 [US2] Create `TodoItem.vue` component shell with typed `todo: Todo` prop in `src/components/TodoItem.vue`
-- [ ] T031 [US2] Implement complete/incomplete toggle control and emit `toggle(id)` in `src/components/TodoItem.vue`
-- [ ] T032 [US2] Implement delete control and emit `remove(id)` in `src/components/TodoItem.vue`
+- [x] T030 [US2] Create `TodoItem.vue` component shell with typed `todo: Todo` prop in `src/components/TodoItem.vue`
+- [x] T031 [US2] Implement complete/incomplete toggle control and emit `toggle(id)` in `src/components/TodoItem.vue`
+- [x] T032 [US2] Implement delete control and emit `remove(id)` in `src/components/TodoItem.vue`
 - [ ] T033 [US2] Implement edit mode state and text input in `src/components/TodoItem.vue`
 - [ ] T034 [US2] Implement Enter-to-save edit behavior with trimmed non-empty text in `src/components/TodoItem.vue`
 - [ ] T035 [US2] Implement Esc-to-cancel edit behavior preserving original text in `src/components/TodoItem.vue`
@@ -116,7 +116,7 @@ description: "Task list for Simple Todo List App implementation"
 - [ ] T044 [US4] Confirm all Todo mutations call persistence helpers in `src/composables/useTodos.ts`
 - [ ] T045 [US4] Confirm `currentFilter` is not written to localStorage and defaults to `all` after reload in `src/composables/useTodos.ts`
 - [ ] T046 [US4] Confirm invalid localStorage data falls back to an empty list without blocking the app in `src/composables/useTodos.ts`
-- [ ] T047 Run `npm.cmd run build` from repository root to confirm all component props and emitted events type-check
+- [x] T047 Run `npm.cmd run build` from repository root to confirm all component props and emitted events type-check
 
 **Checkpoint**: All core components are wired, props/events are typed, and build passes.
 
@@ -152,7 +152,7 @@ description: "Task list for Simple Todo List App implementation"
 **Purpose**: Add simple UI styling, improve readability, and complete final validation.
 
 - [ ] T064 Add a simple readable app layout in `src/style.css`
-- [ ] T065 Add clear completed-state styling such as line-through text and reduced opacity in `src/style.css` or `src/components/TodoItem.vue`
+- [x] T065 Add clear completed-state styling such as line-through text and reduced opacity in `src/style.css` or `src/components/TodoItem.vue`
 - [ ] T066 Add selected-filter button styling in `src/style.css` or `src/components/TodoFilter.vue`
 - [ ] T067 Add empty-list text styling in `src/style.css` or `src/components/TodoList.vue`
 - [ ] T068 Add accessible labels or text for input, toggle, edit, delete, filter, and clear-completed controls in Todo components under `src/components/`

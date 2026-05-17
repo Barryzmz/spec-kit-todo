@@ -101,6 +101,18 @@ export function useTodos() {
     return true
   }
 
+  function deleteTodo(id: string) {
+    todos.value = todos.value.filter((todo) => todo.id !== id)
+    saveTodos(todos.value)
+  }
+
+  function toggleTodo(id: string) {
+    todos.value = todos.value.map((todo) =>
+      todo.id === id ? { ...todo, completed: !todo.completed } : todo,
+    )
+    saveTodos(todos.value)
+  }
+
   return {
     todos,
     currentFilter,
@@ -108,5 +120,7 @@ export function useTodos() {
     completedCount,
     activeCount,
     addTodo,
+    deleteTodo,
+    toggleTodo,
   }
 }

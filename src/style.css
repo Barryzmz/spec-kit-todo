@@ -101,8 +101,48 @@ button {
 }
 
 .todo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   border: 1px solid #e5e7eb;
   border-radius: 6px;
   padding: 10px 12px;
   background: #fff;
+}
+
+.todo-row-completed {
+  opacity: 0.62;
+}
+
+.todo-check {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.todo-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.todo-row-completed .todo-title {
+  text-decoration: line-through;
+}
+
+.todo-delete {
+  flex: 0 0 auto;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #991b1b;
+  background: #fef2f2;
 }
