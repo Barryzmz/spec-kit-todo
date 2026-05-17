@@ -23,12 +23,12 @@ description: "Task list for Simple Todo List App implementation"
 
 **Purpose**: Confirm the existing Vue + TypeScript + Vite project is healthy, remove starter example content, and prepare folders.
 
-- [ ] T001 Run `npm.cmd run build` from repository root to confirm the current Vue + TypeScript + Vite project builds before changes
-- [ ] T002 Remove unused starter component usage from `src/App.vue` while keeping the app temporarily buildable
-- [ ] T003 Remove unused starter imports and references from `src/main.ts`
-- [ ] T004 Clean Vite starter styles from `src/style.css` and leave a minimal app-safe baseline
-- [ ] T005 Create feature folders `src/types`, `src/composables`, and `src/components`
-- [ ] T006 Run `npm.cmd run build` from repository root to confirm cleanup and folder preparation did not break the project
+- [x] T001 Run `npm.cmd run build` from repository root to confirm the current Vue + TypeScript + Vite project builds before changes
+- [x] T002 Remove unused starter component usage from `src/App.vue` while keeping the app temporarily buildable
+- [x] T003 Remove unused starter imports and references from `src/main.ts`
+- [x] T004 Clean Vite starter styles from `src/style.css` and leave a minimal app-safe baseline
+- [x] T005 Create feature folders `src/types`, `src/composables`, and `src/components`
+- [x] T006 Run `npm.cmd run build` from repository root to confirm cleanup and folder preparation did not break the project
 
 **Checkpoint**: Project is clean, folders exist, and build passes.
 
@@ -40,23 +40,23 @@ description: "Task list for Simple Todo List App implementation"
 
 **CRITICAL**: Complete this phase before creating Todo components.
 
-- [ ] T007 Create `Todo` interface with `id`, `title`, `completed`, and `createdAt` fields in `src/types/todo.ts`
-- [ ] T008 Create `TodoFilter` union type with `all`, `active`, and `completed` values in `src/types/todo.ts`
-- [ ] T009 Create `useTodos` composable shell exporting `useTodos()` in `src/composables/useTodos.ts`
-- [ ] T010 Implement `todos` state as `ref<Todo[]>([])` in `src/composables/useTodos.ts`
-- [ ] T011 Implement `currentFilter` state with default `all` in `src/composables/useTodos.ts`
-- [ ] T012 Implement `filteredTodos`, `completedCount`, and `activeCount` computed values in `src/composables/useTodos.ts`
-- [ ] T013 Implement Todo ID creation using `crypto.randomUUID()` with `Date.now().toString()` fallback in `src/composables/useTodos.ts`
-- [ ] T014 Implement `addTodo(title: string)` with trim, blank rejection, `completed: false`, `createdAt`, and persistence in `src/composables/useTodos.ts`
+- [x] T007 Create `Todo` interface with `id`, `title`, `completed`, and `createdAt` fields in `src/types/todo.ts`
+- [x] T008 Create `TodoFilter` union type with `all`, `active`, and `completed` values in `src/types/todo.ts`
+- [x] T009 Create `useTodos` composable shell exporting `useTodos()` in `src/composables/useTodos.ts`
+- [x] T010 Implement `todos` state as `ref<Todo[]>([])` in `src/composables/useTodos.ts`
+- [x] T011 Implement `currentFilter` state with default `all` in `src/composables/useTodos.ts`
+- [x] T012 Implement `filteredTodos`, `completedCount`, and `activeCount` computed values in `src/composables/useTodos.ts`
+- [x] T013 Implement Todo ID creation using `crypto.randomUUID()` with `Date.now().toString()` fallback in `src/composables/useTodos.ts`
+- [x] T014 Implement `addTodo(title: string)` with trim, blank rejection, `completed: false`, `createdAt`, and persistence in `src/composables/useTodos.ts`
 - [ ] T015 Implement `deleteTodo(id: string)` in `src/composables/useTodos.ts`
 - [ ] T016 Implement `toggleTodo(id: string)` for complete and incomplete transitions in `src/composables/useTodos.ts`
 - [ ] T017 Implement `editTodo(id: string, title: string)` with trim, blank rejection, original-title preservation, and persistence in `src/composables/useTodos.ts`
 - [ ] T018 Implement `clearCompleted()` in `src/composables/useTodos.ts`
 - [ ] T019 Implement `setFilter(filter: TodoFilter)` without localStorage persistence in `src/composables/useTodos.ts`
-- [ ] T020 Implement `loadTodos()` using localStorage key `spec-kit-todo-items` with invalid-data fallback to an empty list in `src/composables/useTodos.ts`
-- [ ] T021 Implement `saveTodos()` to store only the Todo array under `spec-kit-todo-items` in `src/composables/useTodos.ts`
-- [ ] T022 Wire `loadTodos()` into `useTodos()` initialization in `src/composables/useTodos.ts`
-- [ ] T023 Run `npm.cmd run build` from repository root to confirm type and composable work passes
+- [x] T020 Implement `loadTodos()` using localStorage key `spec-kit-todo-items` with invalid-data fallback to an empty list in `src/composables/useTodos.ts`
+- [x] T021 Implement `saveTodos()` to store only the Todo array under `spec-kit-todo-items` in `src/composables/useTodos.ts`
+- [x] T022 Wire `loadTodos()` into `useTodos()` initialization in `src/composables/useTodos.ts`
+- [x] T023 Run `npm.cmd run build` from repository root to confirm type and composable work passes
 
 **Checkpoint**: Todo types and state logic exist, localStorage behavior is implemented, and build passes.
 
