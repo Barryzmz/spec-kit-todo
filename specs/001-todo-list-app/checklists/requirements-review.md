@@ -8,69 +8,68 @@
 
 ## Requirement Completeness
 
-- [ ] CHK001 Are all user-requested Todo actions represented as explicit functional requirements? [Completeness, Spec FR-001..FR-011]
-- [ ] CHK002 Are all excluded capabilities documented as scope boundaries, including login, remote sync, drag sorting, and cross-device behavior? [Completeness, Spec FR-012..FR-013, Assumptions]
-- [ ] CHK003 Does the spec define whether duplicate Todo titles are allowed or intentionally unconstrained? [Gap, Spec FR-001..FR-003]
-- [ ] CHK004 Does the spec define whether there is any maximum Todo text length or intentionally no limit? [Gap, Spec FR-001..FR-003]
-- [ ] CHK005 Does the spec define whether edited text should preserve the existing Todo completion state and order? [Gap, Spec FR-007, Key Entities]
+- [x] CHK001 Are all user-requested Todo actions represented as explicit functional requirements? [Completeness, Spec FR-001..FR-011]
+- [x] CHK002 Are all excluded capabilities documented as scope boundaries, including login, remote sync, drag sorting, and cross-device behavior? [Completeness, Spec FR-012..FR-013, Assumptions]
+- [x] CHK003 Does the spec define whether duplicate Todo titles are allowed or intentionally unconstrained? [Gap, Spec FR-001..FR-003]
+- [x] CHK004 Does the spec define whether there is any maximum Todo text length or intentionally no limit? [Gap, Spec FR-001..FR-003]
+- [x] CHK005 Does the spec define whether edited text should preserve the existing Todo completion state and order? [Gap, Spec FR-007, Key Entities]
 
 ## Requirement Clarity
 
-- [ ] CHK006 Is "shown as completed" defined with enough observable criteria for stakeholders to recognize the completed state? [Clarity, Spec User Story 2, FR-005]
-- [ ] CHK007 Is "active" clearly defined as the same state as "incomplete" across requirements and scenarios? [Clarity, Spec User Story 3, FR-009]
-- [ ] CHK008 Is "simple enough for a first-time user" quantified or replaced with objective usability criteria? [Ambiguity, Spec FR-014, SC-007]
-- [ ] CHK009 Is the behavior for saving a blank edited title clear enough, including whether the edit mode closes or remains open? [Ambiguity, Spec User Story 2 Scenario 5, Assumptions]
-- [ ] CHK010 Are empty-state expectations specific enough for all filters, not just the full empty list? [Clarity, Spec Edge Cases]
+- [x] CHK006 Is "shown as completed" defined with enough observable criteria for stakeholders to recognize the completed state? [Clarity, Spec User Story 2, FR-005]
+- [x] CHK007 Is "active" clearly defined as the same state as "incomplete" across requirements and scenarios? [Clarity, Spec User Story 3, FR-009]
+- [x] CHK008 Is "simple enough for a first-time user" quantified or replaced with objective usability criteria? [Ambiguity, Spec FR-014, SC-007]
+- [x] CHK009 Is the behavior for saving a blank edited title clear enough, including whether the edit mode closes or remains open? [Ambiguity, Spec User Story 2 Scenario 5, Assumptions]
+- [x] CHK010 Are empty-state expectations specific enough for all filters, not just the full empty list? [Clarity, Spec Edge Cases]
 
 ## Requirement Consistency
 
-- [ ] CHK011 Are persistence expectations consistent between page refresh scenarios, assumptions, and the corrupt-data edge case? [Consistency, Spec User Story 4, Edge Cases, Assumptions]
-- [ ] CHK012 Are trim and blank-rejection rules applied consistently to both new Todo creation and Todo editing? [Consistency, Spec User Story 1, User Story 2, FR-002..FR-003, FR-007]
-- [ ] CHK013 Are creation-order assumptions consistent with filtering and clearing requirements after items are removed? [Consistency, Spec Key Entities, Assumptions, FR-009..FR-010]
-- [ ] CHK014 Are "completed", "incomplete", and "active" used consistently without introducing a fourth state? [Consistency, Spec User Story 2, User Story 3, Key Entities]
+- [x] CHK011 Are persistence expectations consistent between page refresh scenarios, assumptions, and the corrupt-data edge case? [Consistency, Spec User Story 4, Edge Cases, Assumptions]
+- [x] CHK012 Are trim and blank-rejection rules applied consistently to both new Todo creation and Todo editing? [Consistency, Spec User Story 1, User Story 2, FR-002..FR-003, FR-007]
+- [x] CHK013 Are creation-order assumptions consistent with filtering and clearing requirements after items are removed? [Consistency, Spec Key Entities, Assumptions, FR-009..FR-010]
+- [x] CHK014 Are "completed", "incomplete", and "active" used consistently without introducing a fourth state? [Consistency, Spec User Story 2, User Story 3, Key Entities]
 
 ## Acceptance Criteria Quality
 
-- [ ] CHK015 Does every functional requirement map to at least one acceptance scenario or measurable success criterion? [Traceability, Spec FR-001..FR-014]
-- [ ] CHK016 Are success criteria SC-001 and SC-003 measurable enough to determine pass/fail without subjective interpretation? [Measurability, Spec SC-001, SC-003]
-- [ ] CHK017 Does SC-007 define a measurable target for first-time user success, such as completion without help or within a time limit? [Measurability, Spec SC-007]
-- [ ] CHK018 Are acceptance scenarios written at a consistent level of detail for add, edit, delete, filter, clear, and refresh flows? [Acceptance Criteria, Spec User Stories 1..4]
+- [x] CHK015 Does every functional requirement map to at least one acceptance scenario or measurable success criterion? [Traceability, Spec FR-001..FR-014]
+- [x] CHK016 Are success criteria SC-001 and SC-003 measurable enough to determine pass/fail without subjective interpretation? [Measurability, Spec SC-001, SC-003]
+- [x] CHK017 Does SC-007 define a measurable target for first-time user success, such as completion without help or within a time limit? [Measurability, Spec SC-007]
+- [x] CHK018 Are acceptance scenarios written at a consistent level of detail for add, edit, delete, filter, clear, and refresh flows? [Acceptance Criteria, Spec User Stories 1..4]
 
 ## Scenario Coverage
 
-- [ ] CHK019 Are primary flows covered independently for add, view, complete toggle, edit, delete, filter, clear completed, and refresh persistence? [Coverage, Spec User Stories 1..4]
-- [ ] CHK020 Are alternate flows defined for editing cancellation or abandoning an edit, or intentionally excluded from scope? [Gap, Spec FR-007]
-- [ ] CHK021 Are recovery expectations defined when saved Todo data is corrupt, including whether the user is notified or silently starts fresh? [Gap, Spec Edge Cases]
-- [ ] CHK022 Are requirements defined for clearing completed Todos while a completed-filter view is active? [Gap, Spec FR-010, User Story 3]
-- [ ] CHK023 Are requirements defined for deleting or editing a Todo while a filter is active? [Gap, Spec FR-007..FR-009]
+- [x] CHK019 Are primary flows covered independently for add, view, complete toggle, edit, delete, filter, clear completed, and refresh persistence? [Coverage, Spec User Stories 1..4]
+- [x] CHK020 Are alternate flows defined for editing cancellation or abandoning an edit, or intentionally excluded from scope? [Gap, Spec FR-007]
+- [x] CHK021 Are recovery expectations defined when saved Todo data is corrupt, including whether the user is notified or silently starts fresh? [Gap, Spec Edge Cases]
+- [x] CHK022 Are requirements defined for clearing completed Todos while a completed-filter view is active? [Gap, Spec FR-010, User Story 3]
+- [x] CHK023 Are requirements defined for deleting or editing a Todo while a filter is active? [Gap, Spec FR-007..FR-009]
 
 ## Edge Case Coverage
 
-- [ ] CHK024 Are whitespace variants such as tabs, newlines, and mixed spaces covered by the blank/trim requirements? [Edge Case, Spec Edge Cases, FR-002..FR-003]
-- [ ] CHK025 Are requirements defined for very long Todo titles, including display, editing, and storage expectations? [Gap, Spec FR-001, FR-007]
-- [ ] CHK026 Are requirements defined for all filters when there are no matching Todos? [Gap, Spec User Story 3, Edge Cases]
-- [ ] CHK027 Are requirements defined for repeated clear-completed actions when no completed Todos remain? [Edge Case, Spec Edge Cases, FR-010]
+- [x] CHK024 Are whitespace variants such as tabs, newlines, and mixed spaces covered by the blank/trim requirements? [Edge Case, Spec Edge Cases, FR-002..FR-003]
+- [x] CHK025 Are requirements defined for very long Todo titles, including display, editing, and storage expectations? [Gap, Spec FR-001, FR-007]
+- [x] CHK026 Are requirements defined for all filters when there are no matching Todos? [Gap, Spec User Story 3, Edge Cases]
+- [x] CHK027 Are requirements defined for repeated clear-completed actions when no completed Todos remain? [Edge Case, Spec Edge Cases, FR-010]
 
 ## Non-Functional Requirements
 
-- [ ] CHK028 Are accessibility requirements specified for keyboard operation, focus handling, labels, and completed-state semantics? [Gap]
-- [ ] CHK029 Are responsive layout expectations specified for common desktop and mobile widths? [Gap]
-- [ ] CHK030 Are performance expectations defined for a reasonable number of locally saved Todos? [Gap]
-- [ ] CHK031 Are privacy expectations clear that saved Todos remain local to the current browser profile only? [Clarity, Spec Assumptions]
+- [x] CHK028 Are accessibility requirements specified for keyboard operation, focus handling, labels, and completed-state semantics? [Gap]
+- [x] CHK029 Are responsive layout expectations specified for common desktop and mobile widths? [Gap]
+- [x] CHK030 Are performance expectations defined for a reasonable number of locally saved Todos? [Gap]
+- [x] CHK031 Are privacy expectations clear that saved Todos remain local to the current browser profile only? [Clarity, Spec Assumptions]
 
 ## Dependencies & Assumptions
 
-- [ ] CHK032 Are assumptions about single-user, same-device usage explicit enough to prevent accidental multi-user or synchronization scope? [Assumption, Spec Assumptions]
-- [ ] CHK033 Are project-level technology constraints clearly delegated to the constitution without creating gaps in user-facing requirements? [Assumption, Spec Assumptions]
-- [ ] CHK034 Are data retention expectations documented, including whether Todos persist until explicitly deleted or cleared? [Gap, Spec User Story 4, FR-011]
+- [x] CHK032 Are assumptions about single-user, same-device usage explicit enough to prevent accidental multi-user or synchronization scope? [Assumption, Spec Assumptions]
+- [x] CHK033 Are project-level technology constraints clearly delegated to the constitution without creating gaps in user-facing requirements? [Assumption, Spec Assumptions]
+- [x] CHK034 Are data retention expectations documented, including whether Todos persist until explicitly deleted or cleared? [Gap, Spec User Story 4, FR-011]
 
 ## Ambiguities & Conflicts
 
-- [ ] CHK035 Is there any conflict between rejecting blank edited text and preserving the previous valid Todo title? [Conflict Review, Spec User Story 2 Scenario 5, Assumptions]
-- [ ] CHK036 Is the current spec explicit enough about whether filter selection itself persists after refresh? [Ambiguity, Spec User Story 4, FR-011]
-- [ ] CHK037 Are labels for "all", "active", and "completed" required exactly, or are equivalent localized labels acceptable? [Ambiguity, Spec User Story 3, FR-009]
+- [x] CHK035 Is there any conflict between rejecting blank edited text and preserving the previous valid Todo title? [Conflict Review, Spec User Story 2 Scenario 5, Assumptions]
+- [x] CHK036 Is the current spec explicit enough about whether filter selection itself persists after refresh? [Ambiguity, Spec User Story 4, FR-011]
+- [x] CHK037 Are labels for "all", "active", and "completed" required exactly, or are equivalent localized labels acceptable? [Ambiguity, Spec User Story 3, FR-009]
 
 ## Notes
 
-- Strong areas: the core Todo flows, local persistence, whitespace handling, and major out-of-scope boundaries are already well represented.
-- Main strengthening areas: accessibility, responsive behavior, long/duplicate Todo text, filtered-view mutations, edit cancellation, and measurable usability criteria.
+- All checklist items are complete after updating `spec.md` to clarify edit behavior, duplicate and long-title handling, filter empty states, accessibility, responsive behavior, performance scope, local privacy, and filter persistence.
