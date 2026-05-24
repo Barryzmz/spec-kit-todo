@@ -40,6 +40,8 @@ Open the local Vite URL shown in the terminal.
 19. With existing localStorage data that lacks `size` or `urgency`, reload the app;
     verify those Todos appear as `small` with urgency `5`.
 20. Verify existing filters still show all, active, and completed Todos correctly.
+21. Complete at least one Todo, use clear completed, and verify completed Todos are
+    removed while active Todos remain.
 
 ## Build Gate
 
