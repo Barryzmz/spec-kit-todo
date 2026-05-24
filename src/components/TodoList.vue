@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import TodoItem from './TodoItem.vue'
-import type { Todo } from '../types/todo'
+import type { Todo, TodoEditPayload } from '../types/todo'
 
 defineProps<{
   todos: Todo[]
 }>()
 
 const emit = defineEmits<{
+  edit: [payload: TodoEditPayload]
   toggle: [id: string]
   remove: [id: string]
 }>()
@@ -22,6 +23,7 @@ const emit = defineEmits<{
       v-for="todo in todos"
       :key="todo.id"
       :todo="todo"
+      @edit="emit('edit', $event)"
       @toggle="emit('toggle', $event)"
       @remove="emit('remove', $event)"
     />

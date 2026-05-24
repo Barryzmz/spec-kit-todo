@@ -20,10 +20,10 @@
 
 **Purpose**: Confirm the existing Vue 3 + TypeScript + Vite app is ready for this feature.
 
-- [ ] T001 Confirm current branch is `002-todo-priority-size` and inspect working tree before editing files under `src/`
-- [ ] T002 [P] Confirm existing implementation files match the plan structure in `src/types/todo.ts`, `src/composables/useTodos.ts`, `src/components/TodoList.vue`, `src/components/TodoItem.vue`, and `src/App.vue`
-- [ ] T003 [P] Confirm no backend, API, database, login, Pinia, Vue Router, Element Plus, Bootstrap, or large UI framework dependency is required in `package.json`
-- [ ] T004 Run `npm.cmd run build` using scripts from `package.json` and record whether the current baseline builds before feature changes
+- [x] T001 Confirm current branch is `002-todo-priority-size` and inspect working tree before editing files under `src/`
+- [x] T002 [P] Confirm existing implementation files match the plan structure in `src/types/todo.ts`, `src/composables/useTodos.ts`, `src/components/TodoList.vue`, `src/components/TodoItem.vue`, and `src/App.vue`
+- [x] T003 [P] Confirm no backend, API, database, login, Pinia, Vue Router, Element Plus, Bootstrap, or large UI framework dependency is required in `package.json`
+- [x] T004 Run `npm.cmd run build` using scripts from `package.json` and record whether the current baseline builds before feature changes
 
 ---
 
@@ -33,16 +33,16 @@
 
 **CRITICAL**: No user story work should begin until this phase is complete.
 
-- [ ] T005 Update `Todo` in `src/types/todo.ts` to include required `size` and `urgency` fields
-- [ ] T006 Add `TodoSize` type with allowed values `big` and `small` in `src/types/todo.ts`
-- [ ] T007 Add `TodoUrgency` type with allowed values `1 | 2 | 3 | 4 | 5` in `src/types/todo.ts`
-- [ ] T008 Add `TodoEditPayload` type for editing title, size, and urgency in `src/types/todo.ts`
-- [ ] T009 Add `isTodoSize` and `isTodoUrgency` validation helpers in `src/composables/useTodos.ts`
-- [ ] T010 Update localStorage load validation in `src/composables/useTodos.ts` to accept existing valid base Todos missing `size` or `urgency`
-- [ ] T011 Normalize missing or invalid saved Todo `size` to `small` in `src/composables/useTodos.ts`
-- [ ] T012 Normalize missing or invalid saved Todo `urgency` to `5` in `src/composables/useTodos.ts`
-- [ ] T013 Confirm `currentFilter` remains in-memory only and is not saved to localStorage in `src/composables/useTodos.ts`
-- [ ] T014 Run `npm.cmd run build` using scripts from `package.json` after foundational type and persistence changes
+- [x] T005 Update `Todo` in `src/types/todo.ts` to include required `size` and `urgency` fields
+- [x] T006 Add `TodoSize` type with allowed values `big` and `small` in `src/types/todo.ts`
+- [x] T007 Add `TodoUrgency` type with allowed values `1 | 2 | 3 | 4 | 5` in `src/types/todo.ts`
+- [x] T008 Add `TodoEditPayload` type for editing title, size, and urgency in `src/types/todo.ts`
+- [x] T009 Add `isTodoSize` and `isTodoUrgency` validation helpers in `src/composables/useTodos.ts`
+- [x] T010 Update localStorage load validation in `src/composables/useTodos.ts` to accept existing valid base Todos missing `size` or `urgency`
+- [x] T011 Normalize missing or invalid saved Todo `size` to `small` in `src/composables/useTodos.ts`
+- [x] T012 Normalize missing or invalid saved Todo `urgency` to `5` in `src/composables/useTodos.ts`
+- [x] T013 Confirm `currentFilter` remains in-memory only and is not saved to localStorage in `src/composables/useTodos.ts`
+- [x] T014 Run `npm.cmd run build` using scripts from `package.json` after foundational type and persistence changes
 
 **Checkpoint**: Extended Todo data can be represented and loaded safely.
 
@@ -56,19 +56,19 @@
 
 ### Implementation for User Story 1
 
-- [ ] T015 [US1] Change `addTodo` signature to accept title, size, and urgency in `src/composables/useTodos.ts`
-- [ ] T016 [US1] Validate trimmed non-empty title before adding in `src/composables/useTodos.ts`
-- [ ] T017 [US1] Validate `size` is `big` or `small` before adding in `src/composables/useTodos.ts`
-- [ ] T018 [US1] Validate urgency is an integer from `1` through `5` before adding in `src/composables/useTodos.ts`
-- [ ] T019 [US1] Save new Todos with `size` and `urgency` fields in `src/composables/useTodos.ts`
-- [ ] T020 [US1] Add add-form state for selected size in `src/App.vue`
-- [ ] T021 [US1] Add add-form state for urgency input and validation error display in `src/App.vue`
-- [ ] T022 [US1] Add size selection controls for `big` and `small` in the add form in `src/App.vue`
-- [ ] T023 [US1] Add urgency input constrained to values `1` through `5` in the add form in `src/App.vue`
-- [ ] T024 [US1] Update `handleAddTodo` to call `addTodo(title, size, urgency)` and clear inputs only after success in `src/App.vue`
-- [ ] T025 [US1] Add local CSS for add-form size and urgency controls in `src/style.css`
+- [x] T015 [US1] Change `addTodo` signature to accept title, size, and urgency in `src/composables/useTodos.ts`
+- [x] T016 [US1] Validate trimmed non-empty title before adding in `src/composables/useTodos.ts`
+- [x] T017 [US1] Validate `size` is `big` or `small` before adding in `src/composables/useTodos.ts`
+- [x] T018 [US1] Validate urgency is an integer from `1` through `5` before adding in `src/composables/useTodos.ts`
+- [x] T019 [US1] Save new Todos with `size` and `urgency` fields in `src/composables/useTodos.ts`
+- [x] T020 [US1] Add add-form state for selected size in `src/App.vue`
+- [x] T021 [US1] Add add-form state for urgency input and validation error display in `src/App.vue`
+- [x] T022 [US1] Add size selection controls for `big` and `small` in the add form in `src/App.vue`
+- [x] T023 [US1] Add urgency input constrained to values `1` through `5` in the add form in `src/App.vue`
+- [x] T024 [US1] Update `handleAddTodo` to call `addTodo(title, size, urgency)` and clear inputs only after success in `src/App.vue`
+- [x] T025 [US1] Add local CSS for add-form size and urgency controls in `src/style.css`
 - [ ] T026 [US1] Manually validate quickstart steps 1 through 8 using `specs/002-todo-priority-size/quickstart.md`
-- [ ] T027 [US1] Run `npm.cmd run build` using scripts from `package.json` after User Story 1 implementation
+- [x] T027 [US1] Run `npm.cmd run build` using scripts from `package.json` after User Story 1 implementation
 
 **Checkpoint**: Users can add complete Todo records with valid size and urgency.
 
@@ -82,15 +82,15 @@
 
 ### Implementation for User Story 2
 
-- [ ] T028 [P] [US2] Update `TodoList.vue` props usage to pass extended Todo records to `TodoItem.vue` in `src/components/TodoList.vue`
-- [ ] T029 [P] [US2] Render work size label for each Todo in `src/components/TodoItem.vue`
-- [ ] T030 [US2] Render urgency label for each Todo in `src/components/TodoItem.vue`
-- [ ] T031 [US2] Preserve checkbox toggle emit behavior after adding metadata display in `src/components/TodoItem.vue`
-- [ ] T032 [US2] Preserve delete emit behavior after adding metadata display in `src/components/TodoItem.vue`
-- [ ] T033 [US2] Add list item CSS for size and urgency metadata in `src/style.css`
-- [ ] T034 [US2] Confirm completed Todo styling remains visibly distinct with metadata in `src/style.css`
+- [x] T028 [P] [US2] Update `TodoList.vue` props usage to pass extended Todo records to `TodoItem.vue` in `src/components/TodoList.vue`
+- [x] T029 [P] [US2] Render work size label for each Todo in `src/components/TodoItem.vue`
+- [x] T030 [US2] Render urgency label for each Todo in `src/components/TodoItem.vue`
+- [x] T031 [US2] Preserve checkbox toggle emit behavior after adding metadata display in `src/components/TodoItem.vue`
+- [x] T032 [US2] Preserve delete emit behavior after adding metadata display in `src/components/TodoItem.vue`
+- [x] T033 [US2] Add list item CSS for size and urgency metadata in `src/style.css`
+- [x] T034 [US2] Confirm completed Todo styling remains visibly distinct with metadata in `src/style.css`
 - [ ] T035 [US2] Manually validate quickstart steps 9, 10, and 20 using `specs/002-todo-priority-size/quickstart.md`
-- [ ] T036 [US2] Run `npm.cmd run build` using scripts from `package.json` after User Story 2 implementation
+- [x] T036 [US2] Run `npm.cmd run build` using scripts from `package.json` after User Story 2 implementation
 
 **Checkpoint**: Todos display size and urgency without regressing existing list actions.
 
@@ -104,20 +104,20 @@
 
 ### Implementation for User Story 3
 
-- [ ] T037 [P] [US3] Add `editTodo(payload: TodoEditPayload): boolean` in `src/composables/useTodos.ts`
-- [ ] T038 [US3] Preserve previous title when edited title trims to empty in `src/composables/useTodos.ts`
-- [ ] T039 [US3] Preserve previous size when edited size is invalid in `src/composables/useTodos.ts`
-- [ ] T040 [US3] Preserve previous urgency when edited urgency is empty, below `1`, above `5`, or non-integer in `src/composables/useTodos.ts`
-- [ ] T041 [P] [US3] Emit `edit` events from `TodoList.vue` to `App.vue` in `src/components/TodoList.vue`
-- [ ] T042 [US3] Wire `editTodo` from `useTodos` into `TodoList` in `src/App.vue`
-- [ ] T043 [P] [US3] Add edit-mode local state for title, size, and urgency in `src/components/TodoItem.vue`
-- [ ] T044 [US3] Add edit controls for title, size, and urgency in `src/components/TodoItem.vue`
-- [ ] T045 [US3] Save valid edit changes on Enter in `src/components/TodoItem.vue`
-- [ ] T046 [US3] Cancel edit changes on Esc in `src/components/TodoItem.vue`
-- [ ] T047 [US3] Save valid edit changes on blur in `src/components/TodoItem.vue`
-- [ ] T048 [US3] Add CSS for edit-mode controls and validation feedback in `src/style.css`
+- [x] T037 [P] [US3] Add `editTodo(payload: TodoEditPayload): boolean` in `src/composables/useTodos.ts`
+- [x] T038 [US3] Preserve previous title when edited title trims to empty in `src/composables/useTodos.ts`
+- [x] T039 [US3] Preserve previous size when edited size is invalid in `src/composables/useTodos.ts`
+- [x] T040 [US3] Preserve previous urgency when edited urgency is empty, below `1`, above `5`, or non-integer in `src/composables/useTodos.ts`
+- [x] T041 [P] [US3] Emit `edit` events from `TodoList.vue` to `App.vue` in `src/components/TodoList.vue`
+- [x] T042 [US3] Wire `editTodo` from `useTodos` into `TodoList` in `src/App.vue`
+- [x] T043 [P] [US3] Add edit-mode local state for title, size, and urgency in `src/components/TodoItem.vue`
+- [x] T044 [US3] Add edit controls for title, size, and urgency in `src/components/TodoItem.vue`
+- [x] T045 [US3] Save valid edit changes on Enter in `src/components/TodoItem.vue`
+- [x] T046 [US3] Cancel edit changes on Esc in `src/components/TodoItem.vue`
+- [x] T047 [US3] Save valid edit changes on blur in `src/components/TodoItem.vue`
+- [x] T048 [US3] Add CSS for edit-mode controls and validation feedback in `src/style.css`
 - [ ] T049 [US3] Manually validate quickstart steps 11 through 17 using `specs/002-todo-priority-size/quickstart.md`
-- [ ] T050 [US3] Run `npm.cmd run build` using scripts from `package.json` after User Story 3 implementation
+- [x] T050 [US3] Run `npm.cmd run build` using scripts from `package.json` after User Story 3 implementation
 
 **Checkpoint**: Users can edit size and urgency without corrupting existing Todos.
 
@@ -131,12 +131,12 @@
 
 ### Implementation for User Story 4
 
-- [ ] T051 [US4] Confirm `saveTodos` writes the extended Todo array including `size` and `urgency` in `src/composables/useTodos.ts`
-- [ ] T052 [US4] Confirm add, edit, toggle, and delete all call `saveTodos` after state changes in `src/composables/useTodos.ts`
-- [ ] T053 [US4] Confirm old-format valid Todos without `size` or `urgency` render instead of being dropped in `src/composables/useTodos.ts`
+- [x] T051 [US4] Confirm `saveTodos` writes the extended Todo array including `size` and `urgency` in `src/composables/useTodos.ts`
+- [x] T052 [US4] Confirm add, edit, toggle, and delete all call `saveTodos` after state changes in `src/composables/useTodos.ts`
+- [x] T053 [US4] Confirm old-format valid Todos without `size` or `urgency` render instead of being dropped in `src/composables/useTodos.ts`
 - [ ] T054 [US4] Manually validate refresh persistence with newly added Todos using `specs/002-todo-priority-size/quickstart.md`
 - [ ] T055 [US4] Manually validate old localStorage migration to `small` and urgency `5` using `specs/002-todo-priority-size/quickstart.md`
-- [ ] T056 [US4] Run `npm.cmd run build` using scripts from `package.json` after User Story 4 implementation
+- [x] T056 [US4] Run `npm.cmd run build` using scripts from `package.json` after User Story 4 implementation
 
 **Checkpoint**: Persistence and migration behavior match the clarified spec.
 
@@ -146,14 +146,14 @@
 
 **Purpose**: Final cleanup, consistency checks, and acceptance verification.
 
-- [ ] T057 [P] Review `src/types/todo.ts` for simple names and no over-abstraction
-- [ ] T058 [P] Review `src/composables/useTodos.ts` for readable validation and persistence flow
-- [ ] T059 [P] Review `src/App.vue`, `src/components/TodoList.vue`, and `src/components/TodoItem.vue` for clear props and emits types
-- [ ] T060 [P] Review `src/style.css` to confirm styling remains project-local and no large UI framework was introduced
+- [x] T057 [P] Review `src/types/todo.ts` for simple names and no over-abstraction
+- [x] T058 [P] Review `src/composables/useTodos.ts` for readable validation and persistence flow
+- [x] T059 [P] Review `src/App.vue`, `src/components/TodoList.vue`, and `src/components/TodoItem.vue` for clear props and emits types
+- [x] T060 [P] Review `src/style.css` to confirm styling remains project-local and no large UI framework was introduced
 - [ ] T061 Run all manual validation steps in `specs/002-todo-priority-size/quickstart.md`
-- [ ] T062 Run `npm.cmd run build` using scripts from `package.json` as the final build gate
-- [ ] T063 Confirm `package.json` does not add Pinia, Vue Router, backend, API, database, login, Element Plus, Bootstrap, or large UI framework dependencies
-- [ ] T064 Update task checkboxes in `specs/002-todo-priority-size/tasks.md` for completed implementation and validation work
+- [x] T062 Run `npm.cmd run build` using scripts from `package.json` as the final build gate
+- [x] T063 Confirm `package.json` does not add Pinia, Vue Router, backend, API, database, login, Element Plus, Bootstrap, or large UI framework dependencies
+- [x] T064 Update task checkboxes in `specs/002-todo-priority-size/tasks.md` for completed implementation and validation work
 - [ ] T065 Confirm clear completed behavior still works after size and urgency changes using `src/App.vue`, `src/composables/useTodos.ts`, and `specs/002-todo-priority-size/quickstart.md`
 
 ---
